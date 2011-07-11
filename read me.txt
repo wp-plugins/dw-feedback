@@ -6,6 +6,8 @@ Requires at least: 3.0
 Tested up to: 3.2
 Stable tag: 1.0
 
+DW Feedback is a simple feedback plugin that adds a small button to the left of your WordPress website allowing users to enter their feedback, good or bad, into it.
+
 == Description ==
 
 DW Feedback is a simple feedback plugin that adds a small button to the left of your WordPress website allowing users to enter their feedback, good or bad, into it. The plugin then stores this information for you to view easily in your WordPress Admin area. It has moods built in for users to select. This plugin also allows you to customise the button text, the form text, whether emails are needed, admin notifications and even a simple on/off button.
