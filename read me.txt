@@ -4,7 +4,7 @@ Donate link: http://www.danielwoolnough.com/contact/but-me-a-coffee/
 Tags: DW, Feedback, user, daniel, woolnough
 Requires at least: 3.0
 Tested up to: 3.2
-Stable tag: 1.0
+Version: 1.0
 
 DW Feedback is a simple feedback plugin that adds a small button to the left of your WordPress website allowing users to enter their feedback, good or bad, into it.
 
