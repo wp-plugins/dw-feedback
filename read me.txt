@@ -1,19 +1,22 @@
 === DW Feedback ===
 Contributors: Daniel Woolnough
-Donate link: http://www.danielwoolnough.com/contact/but-me-a-coffee/
+Donate link: http://www.danielwoolnough.com/contact/coffee/
 Tags: DW, Feedback, user, daniel, woolnough
 Requires at least: 3.0
 Tested up to: 3.2
-Version: 1.0
+Version: 1.0.1
 
+THIS PLUGIIN IS NO LONGER IN DEVELOPMENT OR BEING SUPPORTED. PLEASE SEE MY BLOG FOR MORE INFORMATION. 
 DW Feedback is a simple feedback plugin that adds a small button to the left of your WordPress website allowing users to enter their feedback, good or bad, into it.
 
 == Description ==
 
+THIS PLUGIIN IS NO LONGER IN DEVELOPMENT OR BEING SUPPORTED. PLEASE SEE MY BLOG FOR MORE INFORMATION. 
 DW Feedback is a simple feedback plugin that adds a small button to the left of your WordPress website allowing users to enter their feedback, good or bad, into it. The plugin then stores this information for you to view easily in your WordPress Admin area. It has moods built in for users to select. This plugin also allows you to customise the button text, the form text, whether emails are needed, admin notifications and even a simple on/off button.
 
 == Installation ==
 
+THIS PLUGIIN IS NO LONGER IN DEVELOPMENT OR BEING SUPPORTED. PLEASE SEE MY BLOG FOR MORE INFORMATION. 
 There are two ways to install this plugin.
 
 = Method 1 - WordPress Upload =
@@ -34,5 +37,14 @@ There are two ways to install this plugin.
 = Is This Plugin Free? =
 Yes, This plugin is free to use and do whatever you want with it, use it on client website or your personal blog.
 
-= Change Log =
-Not Yet Available
+= Is the Plugin in Development? =
+No, I am no longer developing, supporting or maintaining this plugin. Please see my blog for more information.
+
+== Change Log ==
+=1.0.1=
+
+#Notice Added to Say Pluign no longer in development
+
+=1.0=
+
+#Initial Release

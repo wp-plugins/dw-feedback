@@ -4,7 +4,7 @@ Plugin Name: DW Feedback
 Plugin URI: http://www.danielwoolnough.com/product/dw-feedback/
 Description: Lets WordPress users easily add a modal window feedback form to your WordPress site 
 and view user feedback and user info on the WordPress backend.
-Version: 1.0
+Version: 1.0.1
 Author: Daniel Woolnough
 Author URI: http://www.danielwoolnough.com/
 */
@@ -83,26 +83,34 @@ function nd_feedback_button() {
 	$caption = get_option('nd_feedback_form_caption');
 	
 	?>
+	<div class="auto-style1">
 	<a href="#nd_feedback" class="feedback_button"><span><?php echo get_option('nd_feedback_button_text'); ?></span></a>
-	<div id="nd_feedback">
-		<h2><?php echo $title; ?></h2>
+	<div id="nd_feedback" class="auto-style1">
+		<h2 class="auto-style1">DW Feedback</h2>
+		<p class="auto-style1"><strong>Hi there, Thank you for downloading this plugin. Unfortunatly, I am no longer able to maintain it anymore.
+		Please remove this plugin as soon as you have found a replacement as it is/will be no longer compatable
+		with the latest versions of WordPress. Please see me blog for more information. Thanks, Daniel.</strong></p>
 		<?php echo wpautop(wptexturize($caption)); ?>
 		<div class="feedback_messages"></div>
 		<form action="#" method="post" id="feedback_form">
-			<p><label for="nd_email"><?php _e('Email','dw'); ?></label> <input type="text" class="text" id="nd_email" name="nd_email" placeholder="<?php _e('Your email address', 'dw'); if (get_option('nd_feedback_email_require')=='no') _e(' (optional)', 'dw'); ?>" /></p>
+			<div class="auto-style1">
+			<p class="auto-style1"><label for="nd_email"><?php _e('Email','dw'); ?></label> <input type="text" class="text" id="nd_email" name="nd_email" placeholder="<?php _e('Your email address', 'dw'); if (get_option('nd_feedback_email_require')=='no') _e(' (optional)', 'dw'); ?>" /></p>
 			
-			<p><label for="nd_input_feedback"><?php _e('Feedback','dw'); ?></label> <textarea cols="20" rows="5" id="nd_input_feedback" name="nd_input_feedback" placeholder="<?php _e('Your feedback about the site', 'dw'); ?>"></textarea></p>
+			<p class="auto-style1"><label for="nd_input_feedback"><?php _e('Feedback','dw'); ?></label> <textarea cols="20" rows="5" id="nd_input_feedback" name="nd_input_feedback" placeholder="<?php _e('Your feedback about the site', 'dw'); ?>"></textarea></p>
 			
 			
-			<?php if (get_option('nd_feedback_mood_field')!=="no") : ?><div class="input">
+			<?php if (get_option('nd_feedback_mood_field')!=="no") : ?>
+				<div class="auto-style1">
 				<label for="nd_mood"><?php _e('Mood','dw'); ?></label>
 			
 				<ul class="faces">
-					<li class="happy"><a href="#" rel="Happy"><?php _e('Happy', 'dw'); ?></a></li>
-					<li class="amused"><a href="#" rel="Amused"><?php _e('Amused', 'dw'); ?></a></li>
-					<li class="indifferent"><a href="#" rel="Indifferent"><?php _e('Indifferent', 'dw'); ?></a></li>
-					<li class="sad"><a href="#" rel="Sad"><?php _e('Sad', 'dw'); ?></a></li>
+					<li class="auto-style1"><a href="#" rel="Happy"><?php _e('Happy', 'dw'); ?></a></li>
+					<li class="auto-style1"><a href="#" rel="Amused"><?php _e('Amused', 'dw'); ?></a></li>
+					<li class="auto-style1"><a href="#" rel="Indifferent"><?php _e('Indifferent', 'dw'); ?></a></li>
+					<li class="auto-style1"><a href="#" rel="Sad"><?php _e('Sad', 'dw'); ?></a></li>
 				</ul>
+				
+					<div class="auto-style1">
 				
 				<input type="text" class="text" name="nd_mood" id="nd_mood" placeholder="<?php _e("I'm feeling...", "dw"); ?>" /> 
 				
@@ -112,9 +120,11 @@ function nd_feedback_button() {
 				<span class="suggestions Amused"><?php _e("e.g.", "dw"); ?><a href="#"><?php _e("Kidding", "dw"); ?></a>, <a href="#"><?php _e("Amused", "dw"); ?></a>, <a href="#"><?php _e("Silly", "dw"); ?></a></span>
 				<span class="suggestions Happy"><?php _e("e.g.", "dw"); ?> <a href="#"><?php _e("Happy", "dw"); ?></a>, <a href="#"><?php _e("Confident", "dw"); ?></a>, <a href="#"><?php _e("Grateful", "dw"); ?></a></span>
 				<span class="suggestions Sad"><?php _e("e.g.", "dw"); ?> <a href="#"><?php _e("Sad", "dw"); ?></a>, <a href="#"><?php _e("Dissapointed", "dw"); ?></a>, <a href="#"><?php _e("Confused", "dw"); ?></a>, <a href="#"><?php _e("Angry", "dw"); ?></a></span>
+					</div>
 			</div><?php endif; ?>
 			
-			<p><input type="submit" class="submit_feedback" value="<?php _e('Submit Feedback','dw'); ?>" /></p>
+			<p class="auto-style1"><input type="submit" class="submit_feedback" value="<?php _e('Submit Feedback','dw'); ?>" /></p>
+			</div>
 		</form>
 	</div>
 	<script type="text/javascript">
@@ -266,10 +276,10 @@ function nd_feedback_admin_panel() {
 
 	endif;
 	?>
-	<div class="wrap">
+	<div class="auto-style1">
 		<div class="icon32" id="dw_feedback"></div>
-		<h2><?php _e('DW Feedback / Received Feedback', 'dw'); ?></h2>
-		<table class="widefat dw_feedback_table">
+		<h2 class="auto-style1"><?php _e('DW Feedback / Received Feedback', 'dw'); ?></h2>
+		<table class="auto-style1">
 			<thead>
 				<tr>
 					<?php if (get_option('nd_feedback_mood_field')!=="no") : ?><th scope="col" class="center"><?php _e('Mood', 'dw'); ?></th><?php endif; ?>
@@ -327,7 +337,7 @@ function nd_feedback_admin_panel() {
 			</tbody>
 		</table>
 		<div class="tablenav">
-			<div class="tablenav-pages alignright">
+			<div class="auto-style1">
 				<?php
 					if ($total_pages>1) :
 						echo paginate_links( array(
@@ -439,6 +449,9 @@ function nd_feedback_admin_css() {
 		div.indifferent { background-position: 0 -42px; background-color: #ccc; }
 		div.amused { background-position: 0 -84px; background-color: #41b6db; }
 		div.sad { background-position: 0 -126px; background-color: #ff4c4c; }
+	.auto-style1 {
+	text-align: center;
+}
 	</style><?php
 }
 add_action('admin_head', 'nd_feedback_admin_css');
@@ -458,8 +471,9 @@ function nd_feedback_admin_settings() {
 	?>
 	<div class="wrap">
 		<div class="icon32" id="icon-options-general"></div>
-		<h2><?php _e('DW Feedback / Options', 'dw'); ?></h2>
+		<h2 class="auto-style1"><?php _e('DW Feedback / Options', 'dw'); ?></h2>
 		<form method="post" action="admin.php?page=feedback-settings" id="dw_feedback_form">
+			<div class="auto-style1">
 			<?php	
 			foreach($nd_feedback_options as $section) {
 				echo '<h3>'.$section[0].'</h3><div class="dw_feedback_section"><table cellspacing="0" cellpadding="0" class="form-table">';
@@ -489,8 +503,11 @@ function nd_feedback_admin_settings() {
 				echo '</table></div><br class="clear" />';
 			}
 			?>
-			<p class="submit"><input type="submit" class="button-primary" value="<?php _e('Save Changes', 'dw'); ?>" name="save_dw_feedback_options" /></p>
+			<p class="auto-style1"><input type="submit" class="button-primary" value="<?php _e('Save Changes', 'dw'); ?>" name="save_dw_feedback_options" /></p>
+			</div>
 		</form>
 	</div>
+	</div>
+
 	<?php
 }
