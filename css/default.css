@@ -1,0 +1,239 @@
+﻿#nd_feedback { display: none; }
+
+/*--[ Feedback button ]-----------------------------------*/
+
+a.feedback_button, .feedback_box .submit_feedback {
+	/* Round Corners */
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	
+	/* Animation */
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition: all 0.1s ease-in-out;
+	-o-transition: all 0.1s ease-in-out;
+	-webkit-transition: all 0.1s ease-in-out;
+	transition: all 0.1s ease-in-out;
+	
+	/* Appearance */
+	background: #C2F2FF;
+	color: #228FAC;
+	text-shadow: 0 1px 0 #aaa;
+	border: 0;
+	margin: 0;
+	padding: 12px;	
+}
+a.feedback_button {
+	margin: 0 0 0 -4px;
+	padding: 12px 12px 12px 16px;
+	
+	/* Position */
+	position: fixed;
+	left: 0;
+	top: 46%;
+	display: none;
+	float: left;
+	
+	/* Rotation */
+	-moz-transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+	
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+a.feedback_button:hover, .feedback_box .submit_feedback:hover {
+	margin: 0;
+	background: #000;
+	color: #FFF;
+}
+
+/*--[ Feedback box ]-----------------------------------*/
+
+.feedback_box .feedback_success, .feedback_box .feedback_error {
+	border: 1px solid;
+	margin: 0 0 10px 0;
+	padding:15px 10px 15px 50px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	width: 308px;
+}
+.feedback_box .feedback_success {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+	background-image:url('../img/success.png');
+}
+.feedback_box .feedback_error {
+	color: #9d7b11;
+	background-color: #ffe082;
+	background-image: url('../img/error.png');
+}
+.feedback_box h2 {
+	margin: 0 0 12px;
+	padding: 0;
+}
+.feedback_box p, .feedback_box div.input {
+	margin: 0 0 12px;
+	padding: 0;
+	overflow: hidden;
+	zoom: 1;
+}
+.feedback_box label {
+	display: block;
+	color: #999;
+	font-size: 13px;
+}
+.feedback_box input.text, .feedback_box textarea {
+	width: 352px;
+	padding: 8px;
+	border: 1px solid #ccc;
+	
+	font-size: 16px;
+	line-height: 16px;
+	color: #555;
+	
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	
+	vertical-align: middle;
+	
+	outline: 0;
+}
+
+.feedback_box #nd_mood {
+	width: 150px;
+	padding: 11px 8px;
+	margin: 0;
+	float: right;
+}
+
+.feedback_box textarea {
+	height: 75px;
+}
+
+ul.faces {
+	margin: 0 !important;
+	padding: 0 !important;
+	float: left;
+	width: 200px;
+	list-style: none outside !important;
+}
+ul.faces li {
+	float: left;
+	margin: 0 8px 0 0;
+}
+ul.faces li a {
+	float: left;
+	height: 0;
+	width: 42px;
+	padding: 42px 0 0 0;
+	overflow: hidden;
+	zoom: 1;
+	background: #333 url(../img/coolfaces.png) no-repeat top left;
+}
+ul.faces li.happy a { background-position: 0 0; }
+ul.faces li.indifferent a { background-position: 0 -42px; }
+ul.faces li.amused a { background-position: 0 -84px; }
+ul.faces li.sad a { background-position: 0 -126px; }
+ul.faces li a:hover {
+	background-color: #3777af;
+}
+ul.faces li a.current {
+	background-color: #316a9c !important;
+}
+
+.feedback_box .suggestions {
+	font-size: 11px;
+	margin: 0 0 8px;
+	display: block;
+	clear: both;
+}
+
+/*--[ Facebox ]-----------------------------------*/
+
+#facebox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: left;
+}
+
+
+#facebox .popup{
+  position:relative;
+  border:3px solid rgba(0,0,0,0);
+  -webkit-border-radius:5px;
+  -moz-border-radius:5px;
+  border-radius:5px;
+  -webkit-box-shadow:0 0 18px rgba(0,0,0,0.4);
+  -moz-box-shadow:0 0 18px rgba(0,0,0,0.4);
+  box-shadow:0 0 18px rgba(0,0,0,0.4);
+}
+
+#facebox .content {
+  display:table;
+  width: 370px;
+  padding: 20px;
+  background: #fff;
+  -webkit-border-radius:4px;
+  -moz-border-radius:4px;
+  border-radius:4px;
+}
+
+#facebox .content > p:first-child{
+  margin-top:0;
+}
+#facebox .content > p:last-child{
+  margin-bottom:0;
+}
+
+#facebox .close{
+  position:absolute;
+  top:10px;
+  right:10px;
+  line-height: 1;
+  padding:0;
+  background:#fff;
+}
+#facebox .close img{
+  opacity:0.3;
+}
+#facebox .close:hover img{
+  opacity:1.0;
+}
+
+#facebox .loading {
+  text-align: center;
+}
+
+#facebox .image {
+  text-align: center;
+}
+
+#facebox img {
+  border: 0;
+  margin: 0;
+}
+
+#facebox_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height:100%;
+  width:100%;
+}
+
+.facebox_hide {
+  z-index:-100;
+}
+
+.facebox_overlayBG {
+  background-color: #000;
+  z-index: 99;
+}

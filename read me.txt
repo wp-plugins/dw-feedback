@@ -1,0 +1,51 @@
+=== DW Feedback ===
+
+Contributors: Daniel Woolnough
+Donate link: http://www.danielwoolnough.com/contact/coffee/
+Tags: DW, Feedback, user, daniel, woolnough
+Requires at least: 3.0
+Tested up to: 3.2
+Version: 1.0.1
+
+THIS PLUGIIN IS NO LONGER IN DEVELOPMENT OR BEING SUPPORTED. PLEASE SEE MY BLOG FOR MORE INFORMATION. 
+DW Feedback is a simple feedback plugin that adds a small button to the left of your WordPress website allowing users to enter their feedback, good or bad, into it.
+
+== Description ==
+
+THIS PLUGIIN IS NO LONGER IN DEVELOPMENT OR BEING SUPPORTED. PLEASE SEE MY BLOG FOR MORE INFORMATION. 
+DW Feedback is a simple feedback plugin that adds a small button to the left of your WordPress website allowing users to enter their feedback, good or bad, into it. The plugin then stores this information for you to view easily in your WordPress Admin area. It has moods built in for users to select. This plugin also allows you to customise the button text, the form text, whether emails are needed, admin notifications and even a simple on/off button.
+
+== Installation ==
+
+THIS PLUGIIN IS NO LONGER IN DEVELOPMENT OR BEING SUPPORTED. PLEASE SEE MY BLOG FOR MORE INFORMATION. 
+There are two ways to install this plugin.
+
+= Method 1 - WordPress Upload =
+1. Go to your add new plugins page and click on the upload link.
+2. Find where you have downloaded the file and upload it to your website.
+3. Activate the plugin once uploaded.
+4. Navigate to Feedback on your WP Admin Sidebar and customise.
+
+= Method 2 - FTP Upload =
+
+1. Extract the downloaded file to your desktop.
+2. Upload `dw-admin-footer` folder to the `/wp-content/plugins/` directory using an FTP client.
+3. Activate the plugin through the 'Plugins' menu in WordPress
+4. Navigate to Feedback on your WP Admin Sidebar and customise.
+
+== Frequently Asked Questions ==
+
+= Is This Plugin Free? =
+Yes, This plugin is free to use and do whatever you want with it, use it on client website or your personal blog.
+
+= Is the Plugin in Development? =
+No, I am no longer developing, supporting or maintaining this plugin. Please see my blog for more information.
+
+== Change Log ==
+=1.0.1=
+
+#Notice Added to Say Pluign no longer in development
+
+=1.0=
+
+#Initial Release
